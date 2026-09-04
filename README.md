@@ -3,4 +3,4 @@
 DISCLAIMERR:
 Some of the pictures are AI GENERATED and source in Pinterest.
 
-For a live visit, click here:
+For a live visit, click here: eddacafe.netlify.app
