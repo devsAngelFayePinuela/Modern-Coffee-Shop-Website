@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Edda Coffee Shop</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Edda</h2>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+    
+    <!-- Dropdown Item -->
+    <li class="nav-item dropdown">
+        <a href="#menu" class="nav-link">Menu <i class="fa-solid fa-chevron-down dropdown-icon"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="#hot-beverage">Hot Beverage</a></li>
+            <li><a href="#iced-coffee">Iced Coffee</a></li>
+            <li><a href="#signature-beverage">Signature Beverage</a></li>
+            <li><a href="#meals">Meals</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#burger-fries">Burger &amp; Fries</a></li>
+        </ul>
+    </li>
+
+    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class ="hero-section" id="home">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class = "title">Best Coffee in Town</h2>
+                    <h3 class="subtitle">Make your day great with our special coffee!</h3>
+                    <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup sparks joy.</p>
+
+                    <div class="buttons">
+                        <a href="menu.html" class="button order-now">Explore Menu</a>
+                        <a href="#contact" class="button Contact-now">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/edda-hero.png" alt="hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <section class = "about-section" id="about">
+    <div class="section-content">
+        <div class="about-image-wrapper">
+            <img src="images/about-photo.jpg" alt="About Us" class="about-image">
+        </div>
+
+        <div class="about-details">
+            <h2 class ="section-title">About Us</h2>
+            <p class="text">Our Coffee Shop is a cozy neighborhood café located 
+                at 121 P. Jacinto Street, Grace Park East, South Caloocan, 
+                Metro Manila. Known for its warm and welcoming atmosphere, 
+                the café provides a comfortable space where customers can enjoy 
+                quality coffee, catch up with friends, study, or work in a relaxed 
+                setting. With affordable prices and a selection of espresso-based 
+                beverages, iced coffee, and light snacks, EDDA Coffee Shop caters 
+                to students, professionals, and coffee enthusiasts looking for a 
+                pleasant café experience. Its friendly ambiance and convenient location make 
+                it a favorite destination for locals seeking a great cup of coffee and a place to unwind.</p>
+               <div class="social-link-list">
+                <a href="https://www.facebook.com/eddacafeph" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/eddacafeph" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+        </div>
+    </div>
+    
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="menu-container">
+        <div class="menu-header">
+            <h2 class="section-title menu-title">OUR MENU</h2>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Item 1: Hot Beverage -->
+            <div class="menu-card">
+                <div class="menu-image-wrapper">
+                    <img src="images/hot-beverage.png" alt="Hot Beverage" class="menu-image">
+                </div>
+                <h3 class="menu-item-title">Hot Beverage</h3>
+                <p class="menu-item-description">Wide range of steaming hot coffee to make you fresh and light.</p>
+                <a href="menu.html#hot-beverage" class="button see-more-btn">See More</a>
+            </div>
+
+            <!-- Item 2: Cold Beverage -->
+            <div class="menu-card">
+                <div class="menu-image-wrapper">
+                    <img src="images/cold-beverage.png" alt="Cold Beverage" class="menu-image">
+                </div>
+                <h3 class="menu-item-title">Cold Beverage</h3>
+                <p class="menu-item-description">Creamy and frothy cold coffee to make you cool.</p>
+                <a href="menu.html#iced-coffee" class="button see-more-btn">See More</a>
+            </div>
+
+            <!-- Item 3: Refreshment -->
+            <div class="menu-card">
+                <div class="menu-image-wrapper">
+                    <img src="images/refreshment.png" alt="Refreshment" class="menu-image">
+                </div>
+                <h3 class="menu-item-title">Signature Beverage</h3>
+                <p class="menu-item-description">Our signature blend of coffee and milk, perfectly balanced for a smooth taste.</p>
+                <a href="menu.html#signature-beverage" class="button see-more-btn">See More</a>
+            </div>
+
+            <!-- Item 4: Dessert -->
+            <div class="menu-card">
+                <div class="menu-image-wrapper">
+                    <img src="images/meal.png" alt="Meals" class="menu-image">
+                </div>
+                <h3 class="menu-item-title">Meals</h3>
+                <p class="menu-item-description">Delicious and filling plates prepared fresh for your day.</p>
+                <a href="menu.html#meals" class="button see-more-btn">See More</a>
+            </div>
+
+            <!-- Item 5: Meal -->
+            <div class="menu-card">
+                <div class="menu-image-wrapper">
+                    <img src="images/dessert.png" alt="Dessert" class="menu-image">
+                </div>
+                <h3 class="menu-item-title">Dessert</h3>
+                <p class="menu-item-description">Sweet treats and pastries to pair perfectly with your drink.</p>
+                <a href="menu.html#desserts" class="button see-more-btn">See More</a>
+            </div>
+
+            <!-- Item 6: Burgers and Fries -->
+            <div class="menu-card">
+                <div class="menu-image-wrapper">
+                    <img src="images/burgers-and-fries.png" alt="Burgers and Fries" class="menu-image">
+                </div>
+                <h3 class="menu-item-title">Burgers and Fries</h3>
+                <p class="menu-item-description">Juicy, flavorful burgers served alongside crispy golden fries.</p>
+                <a href="menu.html#burger-fries" class="button see-more-btn">See More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery-section" id="gallery">
+    <div class="gallery-container">
+        <div class="gallery-header">
+            <h2 class="section-title gallery-title">GALLERY</h2>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-quote">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="quote-text">Every cup we serve is brewed with passion, poured with care, and shared with a smile.</p>
+                <span class="quote-author">— Edda Coffee Shop</span>
+            </div>
+
+            <div class="gallery-item item-1">
+                <img src="images/gal1.jpg" alt="Edda Coffee Shop team at the storefront">
+            </div>
+            <div class="gallery-item item-2">
+                <img src="images/gal2.jpg" alt="Fresh chocolate chip muffins">
+            </div>
+            <div class="gallery-item item-3">
+                <img src="images/gal3.jpg" alt="Edda drinks menu board">
+            </div>
+            <div class="gallery-item item-4">
+                <img src="images/gal4.jpg" alt="Freshly baked muffins on display">
+            </div>
+            <div class="gallery-item item-5">
+                <img src="images/gal5.jpg" alt="Nut-topped muffins on display">
+            </div>
+            <div class="gallery-item item-6">
+                <img src="images/gal6.jpg" alt="Coffee Talks event banner">
+            </div>
+            <div class="gallery-item item-7">
+                <img src="images/gal7.jpg" alt="Coffee syrups and milk shelf display">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2 class="section-title contact-title">CONTACT US</h2>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3 class="contact-subtitle">Let's Get in Touch</h3>
+                <p class="contact-text">Have a question, feedback, or just want to say hi? Drop us a message — we'd love to hear from you.</p>
+
+                <div class="contact-detail">
+                    <i class="fa-solid fa-location-dot contact-icon"></i>
+                    <p>121 P. Jacinto Street, Grace Park East, South Caloocan, Metro Manila</p>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                    <p>+63 912 345 6789</p>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                    <p>hello@eddacoffee.com</p>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="fa-solid fa-clock contact-icon"></i>
+                    <p>Monday – Sunday: 8:00 AM – 10:00 PM</p>
+                </div>
+
+                <div class="social-link-list contact-socials">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" class="form-input" required>
+                    <input type="email" placeholder="Your Email" class="form-input" required>
+                </div>
+                <input type="text" placeholder="Subject" class="form-input full-width" required>
+                <textarea placeholder="Your Message" class="form-input full-width form-textarea" required></textarea>
+                <button type="submit" class="button send-message-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Edda Coffee Shop. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const hamburgerIcon = hamburger.querySelector('i');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isOpen);
+            hamburgerIcon.classList.toggle('fa-bars', !isOpen);
+            hamburgerIcon.classList.toggle('fa-xmark', isOpen);
+        });
+
+        // Close the mobile menu after a nav link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                hamburgerIcon.classList.add('fa-bars');
+                hamburgerIcon.classList.remove('fa-xmark');
+            });
+        });
+    </script>
+</body>
+</html>

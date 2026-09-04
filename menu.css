@@ -1,0 +1,373 @@
+ /* --- Google Fonts Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+ 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px; /* offset so sections don't hide under sticky navbar */
+}
+
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --accent-color: #d4a373; /*Remove*/
+            --bg-dark: #1a1a1a; /*Remove*/
+            --bg-card: #2a2a2a; /*Remove*/
+            --text-light: #f5f5f5; /*Remove*/
+            --text-muted: #bbbbbb; /*Remove*/
+            --border-radius: 12px;
+            --shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            --primary-color: #3b141c;   /* Deep Espresso */
+            --accent-color: #f1915c;    /* Warm Amber/Caramel */
+            --accent-hover: #a6623d;    /* Darker Caramel */
+            --text-dark: #2b2b2b;       /* Soft Black */
+            --text-muted: #666666;      /* Muted Gray */
+            --bg-light: #fdfaf6;        /* Warm Cream Background */
+            --white: #ffffff;
+            --secondary-color: #ff9d1c;
+        }
+
+        body {
+        background-color: var(--bg-light);
+        color: var(--text-dark);
+        line-height: 1.6;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+    background-color: var(--primary-color);
+    width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;    
+        box-sizing: border-box;
+    }
+
+        /* ----- NAVBAR (your provided code) ----- */
+       header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 120px;
+    box-sizing: border-box;
+    max-width: 1500px;
+    margin: 0 auto;
+       }
+
+    .nav-logo {
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .logo-text {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    /* FIXES APPLIED HERE */
+    .navbar .nav-menu {
+        display: flex;       /* Forces the items into a single row */
+        gap: 24px;
+        list-style: none;
+        margin: 0;
+        padding: 0;       
+    }
+
+
+    /* Ensures if you used <li> tags, they display inline correctly */
+    .nav-menu li {
+        display: inline-block; 
+    }
+
+    .nav-menu a {
+        text-decoration: none;
+        color: var(--white);
+        font-weight: 500;
+        transition: color 0.3s ease;
+        display: block;     /* Makes the whole area clickable */
+    }
+
+    .nav-menu a:hover {
+        color: var(--accent-color);
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: var(--white);
+        font-weight: 500;
+        transition: color 0.3s ease;
+        display: block;
+    }
+
+    .nav-link:hover {
+        color: var(--accent-color);
+    }
+
+    /* Parent item position context */
+.nav-item.dropdown {
+    position: relative;
+}
+
+/* Optional icon spacing */
+.dropdown-icon {
+    font-size: 0.8rem;
+    margin-left: 4px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon on hover */
+.nav-item.dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+/* Hidden dropdown container */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Positions directly beneath the menu link */
+    left: 0;
+    background-color: var(--primary-color);
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+/* Stack dropdown items vertically */
+.dropdown-menu li {
+    display: block;
+    width: 100%;
+}
+
+/* Dropdown links styling */
+.dropdown-menu a {
+    padding: 10px 20px;
+    color: var(--white);
+    font-size: 0.95rem;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effects for list items */
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle dark/light hover overlay */
+    color: var(--accent-color);
+}
+
+/* Reveal dropdown when mouse touches the parent element */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+    /* --- Hamburger Button (hidden on desktop) --- */
+    .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--white);
+        font-size: 1.6rem;
+        cursor: pointer;
+        padding: 0;
+        line-height: 1;
+        z-index: 1100;
+    }
+
+        /* ----- MENU HERO ----- */
+        .menu-hero {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+        .menu-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+        }
+
+        .menu-hero p {
+            color: black;
+            font-size: 1.1rem;
+            margin-top: 8px;
+        }
+
+        /* ----- MENU CONTAINER ----- */
+        .menu-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px 40px 60px;
+        }
+
+        /* ----- CATEGORY SECTION ----- */
+        .menu-category {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--primary-color);
+        }
+
+        .category-title i {
+            font-size: 1.6rem;
+        }
+
+        /* ----- GRID LAYOUT ----- */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        /* ----- MENU CARD (with image) ----- */
+        .menu-card {
+            background: transparent;  /* Removes background color */
+            border: none;             /* Removes borders */
+            box-shadow: none;         /* Removes card drop shadow */
+            transition: transform 0.25s ease;
+            text-align: center;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-6px);
+            box-shadow: none;
+            border-color: transparent;
+        }
+
+        /* ----- Product Image ----- */
+        .menu-card .product-image {
+    
+            display: block;
+            width: 100%;
+            height: 160px;
+            object-fit: contain;     
+            object-position: center;  
+            display: block;
+            margin: 0 auto;
+            background: transparent;  /* Removes solid/gradient background placeholder */
+        }
+
+
+        .menu-card .item-name {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1a1a1a;           /* Dark text for visibility */
+            margin-bottom: 4px;
+        }
+
+        .menu-card .item-desc {
+          font-size: 0.82rem;
+        color: #666;          
+        margin-bottom: 8px;
+        }
+
+        /* ----- PLAIN TEXT PRICE (no button, no border, no circle) ----- */
+        .menu-card .item-price {
+            font-size: .8rem;
+
+    color: var(--primary-color);
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 768px) {
+            header .navbar {
+                padding: 15px 20px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .navbar .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                max-width: 280px;
+                height: 100vh;
+                background-color: #222;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                transition: right 0.3s ease;
+                box-shadow: -8px 0 20px rgba(0, 0, 0, 0.6);
+                padding: 40px 0;
+            }
+
+            .navbar .nav-menu.active {
+                right: 0;
+            }
+
+            .nav-menu li {
+                display: block;
+            }
+
+            .nav-menu a {
+                font-size: 1.2rem;
+            }
+
+            .menu-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .menu-container {
+                padding: 10px 20px 40px;
+            }
+
+            .menu-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 16px;
+            }
+
+            .menu-card .product-image {
+                height: 120px;
+            }
+
+            .category-title {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .menu-card .card-body {
+                padding: 12px 10px 14px;
+            }
+
+            .menu-card .item-name {
+                font-size: 0.9rem;
+            }
+
+            .menu-card .item-price {
+                font-size: 1rem;
+            }
+
+            .menu-card .product-image {
+                height: 100px;
+            }
+        }
